@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>IronQuizz</title>
+  <link rel="stylesheet" href="styles/index.css" />
+  <script type="module" src="src/index.js"></script>
+</head>
+
+<body>
+
+  <iframe class="video" width="1348" height="480" src="https://www.youtube.com/embed/iHU53NedhkQ" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <div class="container">
+    <div id="question-container" class="hide">
+      <div id="img-question"> <img src=""></div>
+      <div id="question">Question</div>
+      <div id="answer-btn" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
+      </div>
+    </div>
+    <div class="control">
+      <button id="start-btn" class="start-btn btn">Start</button>
+      <button id="next-btn" class="next-btn btn hide">Next</button>
+      <button id="refresh" class="restart-btn btn hide"> Restart</button>
+    </div>
+    <div id="score" class="hide"></div>
+
+  </div>
+
+
+</body>

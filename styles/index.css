@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url("http://mondocine.net/wp-content/uploads/2015/05/mgm-1024x576.jpg");
+  background-size: cover;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#question {
+  font-size: 20px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+#img-question,
+#question {
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  background-color: goldenrod;
+  border: 1px solid gold;
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  background-color: #299b1e;
+  
+}
+
+.btn.wrong {
+  background-color: #f51E10;
+}
+
+.next-btn {
+  pointer-events: none;
+}
+
+.start-btn,
+.next-btn, .restart-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+#score{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  background-color: black;
+  margin-top: 20px;
+}
+
+video.playing{
+  opacity: 1;
+  transition: opacity 3s ease;
+}
+video{
+  opacity: 0;
+  transition: opacity 3s ease;
+}
