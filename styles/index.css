@@ -38,7 +38,6 @@ body {
 #question {
   display: flex;
   justify-content: center;
-
 }
 
 .btn-grid {
@@ -64,11 +63,10 @@ body {
 
 .btn.correct {
   background-color: #299b1e;
-  
 }
 
 .btn.wrong {
-  background-color: #f51E10;
+  background-color: #f51e10;
 }
 
 .next-btn {
@@ -76,7 +74,9 @@ body {
 }
 
 .start-btn,
-.next-btn, .restart-btn {
+.next-btn,
+.restart-btn, 
+.level .btn {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -89,11 +89,20 @@ body {
   align-items: center;
 }
 
+.level{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+
+
+}
+
 .hide {
   display: none;
 }
 
-#score{
+#score {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -102,13 +111,16 @@ body {
   font-weight: bold;
   background-color: black;
   margin-top: 20px;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+ 
 }
 
-video.playing{
-  opacity: 1;
-  transition: opacity 3s ease;
+@keyframes fade-out {
+  to {
+    opacity: 1;
+  }
 }
-video{
-  opacity: 0;
-  transition: opacity 3s ease;
+.anim-fade-out {
+  animation: fade-out 2s forwards;
 }

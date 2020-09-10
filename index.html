@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
-  <title>IronQuizz</title>
-  <link rel="stylesheet" href="styles/index.css" />
-  <script type="module" src="src/index.js"></script>
+  <title>CInéQuizz</title>
+  <link rel="stylesheet" href="./styles/index.css" />
+  <script type="module" src="./src/index.js"></script>
 </head>
 
 <body>
 
-  <iframe class="video" width="1348" height="480" src="https://www.youtube.com/embed/iHU53NedhkQ" frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="video" width="1348" height="480" src="https://www.youtube.com/embed/iHU53NedhkQ?autoplay=1&mute=1"
+    frameborder="0" allow="picture-in-picture" allowfullscreen></iframe>
 
-  <div class="container">
+  <div class="container hide">
     <div id="question-container" class="hide">
+
       <div id="img-question"> <img src=""></div>
       <div id="question">Question</div>
       <div id="answer-btn" class="btn-grid">
@@ -28,7 +29,12 @@
     <div class="control">
       <button id="start-btn" class="start-btn btn">Start</button>
       <button id="next-btn" class="next-btn btn hide">Next</button>
-      <button id="refresh" class="restart-btn btn hide"> Restart</button>
+      <button id="restart-btn" class="restart-btn btn hide"> Restart</button>
+    </div>
+    <div id="container-level" class="level hide">
+      <button id="easy-btn" class="btn">Easy</button>
+      <button id="normal-btn" class="btn">Normal</button>
+      <button id="hard-btn" class="btn">Hard</button>
     </div>
     <div id="score" class="hide"></div>
 

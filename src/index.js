@@ -1,65 +1,64 @@
 import { questions } from "./dataMovie.js";
-
+let filteredQuestions;
 const startBtn = document.getElementById("start-btn");
 const nextBtn = document.getElementById("next-btn");
+const restart = document.getElementById("restart-btn");
+const allBtns = document.querySelectorAll("#answer-btn .btn");
 const questionContainer = document.getElementById("question-container");
 let qImg = document.getElementById("img-question");
 let questionItem = document.getElementById("question");
-const allBtns = document.querySelectorAll("#answer-btn .btn");
 const scoreDiv = document.getElementById("score");
-const refresh = document.getElementById("refresh");
-const video = document.querySelector(".video");
 
-let runningQuestionIndex = getRandomIndex();
+const vid = document.querySelector(".video");
+const divContainer = document.querySelector(".container");
+const levelBtns = document.querySelector("#container-level");
+const allLevelBtns = document.querySelectorAll("#container-level .btn");
+const normalQuestions = questions.filter(
+  (element) => element.level === "normal"
+);
+let runningQuestionIndex = getRandomIndex(normalQuestions);
 let tenQuestion = 1;
 let score = 0;
-console.log("video",video);
 
-
-function autoPlayVideo() {
-  setTimeout(() => {
-    video.click()  
-  }, 500);
-  
+function setVideo() {
+  divContainer.classList.remove("hide");
+  vid.classList.add("anim-fade-out");
+  vid.classList.add("hide");
 }
-
-autoPlayVideo()
-
-// function playVideo() {
-//   video.classList.add("playing");
-//   video.load();
-//   video.play();
-//   video.addEventListener(
-//     "ended",
-//     (evt) => {
-//       video.pause();
-//       video.currentTime = 0;
-//       video.classList.remove("playing");
-//       setTimeout(function () {
-//         document.body.removeChild(video);
-//       }, 2000);
-//     },
-//     false
-//   );
-// }
+setTimeout(setVideo, 12000);
 
 //start the game
 function setStart() {
   startBtn.classList.add("hide");
-  nextBtn.classList.remove("hide");
+  levelBtns.classList.remove("hide");
+  var audio = new Audio("./styles/soundtrackJP.mp3");
+  audio.play();
+}
+
+// choice of level question
+function levelChoice(evt) {
+  const currentLevel = evt.target.textContent.toLowerCase();
+  filteredQuestions = questions.filter(
+    (element) => currentLevel === element.level
+  );
+  nextBtn.addEventListener("click", setNext);
+
+  console.log("---", filteredQuestions);
   questionContainer.classList.remove("hide");
   renderQuestion();
+  levelBtns.classList.add("hide");
+  nextBtn.classList.remove("hide");
 }
 
 //index of question get randomly
-function getRandomIndex() {
-  return Math.floor(Math.random() * questions.length);
+function getRandomIndex(array) {
+  return Math.floor(Math.random() * array.length);
 }
 
 //next btn go to next question and set clear status
 function setNext() {
-  questions.splice(runningQuestionIndex, 1);
-  runningQuestionIndex = getRandomIndex();
+  filteredQuestions.splice(runningQuestionIndex, 1);
+  runningQuestionIndex = getRandomIndex(filteredQuestions);
   renderQuestion();
   clearStatus();
 }
@@ -68,7 +67,9 @@ function setNext() {
 
 function setRestart() {
   clearStatus();
-  refresh.classList.remove("hide");
+  // startBtn.classList.remove("hide");
+  scoreDiv.classList.add("hide");
+  restart.classList.remove("hide");
 }
 
 //to get answer randomly place in the button
@@ -89,7 +90,7 @@ function randomArray(array) {
 // render Question and answer
 function renderQuestion() {
   const allBtns = document.querySelectorAll("#answer-btn .btn");
-  let q = questions[runningQuestionIndex];
+  let q = filteredQuestions[runningQuestionIndex];
   qImg.innerHTML = "<img src=" + q.imgSrc + ">";
   questionItem.innerText = q.question;
   let randomAnswer = randomArray(q.answers);
@@ -109,7 +110,7 @@ function disabledBtn() {
 function selectAnswer(evt) {
   const selectBtn = evt.target;
   const selectResponse = evt.target.textContent;
-  const currentQuestion = questions[runningQuestionIndex];
+  const currentQuestion = filteredQuestions[runningQuestionIndex];
   const currentAnswers = currentQuestion.answers;
   const indexCorrectAnswer = currentQuestion.correctIndex;
   const correctAnswer = currentAnswers[indexCorrectAnswer];
@@ -120,9 +121,10 @@ function selectAnswer(evt) {
   } else {
     selectBtn.classList.add("wrong");
   }
-  endGame();
+
   disabledBtn();
   nextBtn.style.pointerEvents = "auto";
+  endGame();
 }
 
 // clear btn status for next question
@@ -137,7 +139,7 @@ function clearStatus() {
 
 function endGame() {
   console.log(tenQuestion);
-  if (tenQuestion < 5) {
+  if (tenQuestion < 9) {
     console.log("test end Game");
     tenQuestion++;
   } else {
@@ -151,18 +153,23 @@ function endGame() {
 
 function scoreRender() {
   scoreDiv.classList.remove("hide");
-  scoreDiv.innerText = "Final score: " + score + "/10";
-}
-startBtn.addEventListener("click", setStart);
+  let quotesScore = (score <= 3) ? "Try again": (score <=5) ? "Not too bad" : "Stop to watch movie and go out";
 
-nextBtn.addEventListener("click", setNext);
+  scoreDiv.innerHTML +="Final score: " + score + "/10" + "<br/>" +quotesScore;
+
+ 
+}
+
+startBtn.addEventListener("click", setStart);
 
 allBtns.forEach((btn) => {
   btn.addEventListener("click", selectAnswer);
 });
 
-refresh.addEventListener("click", (evt) => {
+restart.addEventListener("click", (evt) => {
   document.location.reload(false);
 });
 
-
+allLevelBtns.forEach((btn) => {
+  btn.addEventListener("click", levelChoice);
+});

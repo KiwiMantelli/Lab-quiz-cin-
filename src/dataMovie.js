@@ -1,7 +1,7 @@
 export let questions = [
     {
       question: "Who made the movie Jurassic Park?",
-      imgSrc: "",
+      imgSrc: "./styles/tRex.gif",
       answers: [
         "James Cameron",
         "Terrence Malik",
@@ -9,22 +9,24 @@ export let questions = [
         "Steven Spielberg",
       ],
       correctIndex: 3,
+      level: "easy",
     },
     {
       question: "In which movie can we hear 'Rosebud'?",
-      imgSrc: "",
+      imgSrc: "./styles/Rosebud2.jpg",
       answers: [
         "Macadam Cowboy",
         "How green was my valley",
-        "Citizen cane",
+        "Citizen kane",
         "The night of the Hunter",
       ],
       correctIndex: 2,
+      level: "normal",
     },
     {
       question:
-        "In which Star Wars movie appears the character of Jar Jar Binks?",
-      imgSrc: "",
+        "In which Star Wars movie, the character of Jar Jar Binks appears for the first time?",
+      imgSrc: "./styles/Jarjarbinks2.jpg",
       answers: [
         "Episode 1: The Phantom Menace",
         "Episode 5: The Empire strikes back",
@@ -32,10 +34,11 @@ export let questions = [
         "Episode 2: Attack of the Clones",
       ],
       correctIndex: 0,
+      level: "easy",
     },
     {
       question: "Who says 'You are gonna need a bigger boat!'? ",
-      imgSrc: "styles/jaws2.jpg",
+      imgSrc: "./styles/jaws2.jpg",
       answers: [
         "Steve Zissou (The life aquatic)",
         "Chief Martin Brody (Jaws)",
@@ -43,10 +46,11 @@ export let questions = [
         "Richard Philips (Captain Philips)",
       ],
       correctIndex: 1,
+      level: "easy",
     },
     {
       question: "In the movie Alien, how many members crew there are? ",
-      imgSrc: "styles/Alien2.jpg",
+      imgSrc: "./styles/Alien2.jpg",
       answers: [
         "One, they all died",
         "Eight, with the Alien",
@@ -54,23 +58,26 @@ export let questions = [
         "Nine, you forgot the cat",
       ],
       correctIndex: 2,
+      level: "easy",
     },
     {
       question: "What is the name of the rat in 'Ratatouille'?",
-      imgSrc: "styles/Movie-review-Ratatouille2.jpg",
+      imgSrc: "./styles/Movie-review-Ratatouille2.jpg",
       answers: ["Ratatouille", "Emile", "Auguste Gusteau", "Rémy"],
       correctIndex: 3,
+      level: "normal",
     },
     {
       question:
         "What is the most Disney animation movie viewed on the box-office?",
-      imgSrc: "",
+      imgSrc: "./styles/disney2.jpg",
       answers: ["Lion King (1994)", "Frozen", "Lion King (2019)", "Snow White"],
       correctIndex: 2,
+      level: "normal",
     },
     {
       question: "Who plays the main character in the movie Ben-Hur?",
-      imgSrc: "",
+      imgSrc: "./styles/BenHur2.jpg",
       answers: [
         "Jack Hawkins",
         "Charlton Heston",
@@ -78,10 +85,11 @@ export let questions = [
         "Kirk Douglas",
       ],
       correctIndex: 1,
+      level: "normal",
     },
     {
       question: "Who says 'I am too old for this shit'?",
-      imgSrc: "",
+      imgSrc: "./styles/tooOld.jpg",
       answers: [
         "Roger Murtaugh (The lethal weapon)",
         "Axel Foley (Beverly Hills cop)",
@@ -89,12 +97,100 @@ export let questions = [
         "John Spartan (Demolition Man)",
       ],
       correctIndex: 0,
+      level:"easy",
     },
     {
-      question: "Who says 'I am your father Luke'?",
-      imgSrc: "",
+      question: "Who says 'I am your father'?",
+      imgSrc: "./styles/luke.gif",
       answers: ["Your father", "Chewbaca", "Darth Vader", "Noooooo"],
       correctIndex: 2,
+      level: "easy",
     },
+    {
+        question: "Which William Shakespeare's play inspired the film 'West Side Story'?",
+        imgSrc:"./styles/westsidestory.gif",
+        answers:["Hamlet", "Macbeth", "Romeo and Juliet", "Othello"],
+        correctIndex: 2,
+        level: "normal",
+    },
+    {
+        question: "In which movie Clint Eastwood dies front camera?",
+        imgSrc:"./styles/clintEastwood2.jpg",
+        answers: ["The Bridges of Madison county", "Gran Torino", "Space cowboys", "A fistful of dollars"],
+        correctIndex: 1,
+        level:"normal",
+    },
+    {
+      question:"'The Magnificent seven' is a remake of which movie?",
+      imgSrc:"",
+      answers:["Kagemusha", "12 Angry men", "Furyo", "Seven samurai"],
+      correctIndex: 3,
+      level: "hard",
+    },
+    {
+      question:"3 films won 11 oscars, which of them?",
+      imgSrc:"",
+      answers:["Ben-Hur, Titanic, The Return of the king", "Avatar, Titanic, West Side Story", "The English patient, Gigi, The Last emperor", "Ben-hur, Titanic, Avatar"],
+      correctIndex: 0,
+      level: "hard",
+    },
+    {
+      question: "What is the brand of Doc's car in 'Back to the future'?",
+      imgSrc:"",
+      answers:["Chevrolet Camaro", "Pontiac GTO", "DMC DeLorean", "Ford Mustang"],
+      correctIndex: 2,
+      level: "easy",
+
+    },
+    {
+      question:"Which animation movie won an Oscar for the song 'Let it go'?",
+      imgSrc:"",
+      answers:["Tangled", "Moana", "Frozen", "Mulan"],
+      correctIndex: 2,
+      level:"easy",
+    },
+    {
+      question:"What is the breed of the famous dog Lassie?",
+      imgSrc:"",
+      answers:["Alaskan Malamute", "German Sheperd", "Border Collie", "Rough Collie"],
+      correctIndex: 3,
+      level:"hard",
+    },
+    {
+      question:"What is Indiana Jones' biggest fear?",
+      imgSrc:"",
+      answers:["Snakes", "Rats", "Spiders", "Dogs"],
+      correctIndex: 0,
+      level: "normal",
+    },
+    {
+      question:"What is the song played during the ear-cutting scene in 'Reservoir dog' movie? ",
+      imgSrc:"",
+      answers:["Jungle boogie by Kool & the Gang", "Stuck in the middle with you by Stealers Wheel", "Street life by Randy Crawford", "Bang bang by Nancy Sinatra"],
+      correctIndex: 1,
+      level: "hard",
+    },
+    {
+      question:"In the movie 'Pulp fiction', which weapon choose Bruce Willis to rescue Ving Rhames' character?",
+      imgSrc:"",
+      answers:["hammer","Baseball bat","Chainsaw","Katana"],
+      correctIndex: 3,
+      level: "hard",
+    },
+    {
+      question:"Who plays the talk show host in the movie 'Joker' (2019)?",
+      imgSrc:"",
+      answers:["Joaquin Phoenix","Robert De Niro","Anthony Hopkins","Heath Ledger"],
+      correctIndex: 1,
+      level: "hard",
+    },
+    {
+      question:"What is the name of Dwayne Johnson's character in the movie 'Moana'?",
+      imgSrc:"",
+      answers:["Moana","Tala","Maui","Tamatoa"],
+      correctIndex:2,
+      level:"hard",
+    }
+
   ];
   
