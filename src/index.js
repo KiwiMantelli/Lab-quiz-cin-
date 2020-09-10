@@ -5,7 +5,7 @@ const nextBtn = document.getElementById("next-btn");
 const restart = document.getElementById("restart-btn");
 const allBtns = document.querySelectorAll("#answer-btn .btn");
 const questionContainer = document.getElementById("question-container");
-let qImg = document.getElementById("img-question");
+let imgQuestion = document.getElementById("img-question");
 let questionItem = document.getElementById("question");
 const scoreDiv = document.getElementById("score");
 
@@ -61,7 +61,10 @@ function setNext() {
   runningQuestionIndex = getRandomIndex(filteredQuestions);
   renderQuestion();
   clearStatus();
+
 }
+
+
 
 //restart btn reset
 
@@ -90,13 +93,16 @@ function randomArray(array) {
 // render Question and answer
 function renderQuestion() {
   const allBtns = document.querySelectorAll("#answer-btn .btn");
-  let q = filteredQuestions[runningQuestionIndex];
-  qImg.innerHTML = "<img src=" + q.imgSrc + ">";
-  questionItem.innerText = q.question;
-  let randomAnswer = randomArray(q.answers);
+  let questionTrack = filteredQuestions[runningQuestionIndex];
+  imgQuestion.innerHTML = "<img src=" + questionTrack.imgSrc + ">";
+  questionItem.innerText = questionTrack.question;
+  let randomAnswer = randomArray(questionTrack.answers);
   randomAnswer.forEach((answer, i) => {
     allBtns[i].innerText = answer;
   });
+  
+ 
+
 }
 
 //after select answer others answers are unclickable
