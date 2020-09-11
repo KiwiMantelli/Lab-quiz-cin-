@@ -13,10 +13,10 @@ const vid = document.querySelector(".video");
 const divContainer = document.querySelector(".container");
 const levelBtns = document.querySelector("#container-level");
 const allLevelBtns = document.querySelectorAll("#container-level .btn");
-const normalQuestions = questions.filter(
-  (element) => element.level === "normal"
+const hardQuestions = questions.filter(
+  (element) => element.level === "hard"
 );
-let runningQuestionIndex = getRandomIndex(normalQuestions);
+let runningQuestionIndex = getRandomIndex(hardQuestions);
 let tenQuestion = 1;
 let score = 0;
 
@@ -91,7 +91,7 @@ function randomArray(array) {
 
 // render Question and answer
 function renderQuestion() {
-  const allBtns = document.querySelectorAll("#answer-btn .btn");
+  // const allBtns = document.querySelectorAll("#answer-btn .btn");
   let questionTrack = filteredQuestions[runningQuestionIndex];
   imgQuestion.innerHTML = "<img src=" + questionTrack.imgSrc + ">";
   questionItem.innerText = questionTrack.question;

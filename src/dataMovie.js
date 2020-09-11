@@ -282,7 +282,7 @@ export let questions = [
   {
     question:
       "What is the answer to the ultimate question of life, the universe, and everything in the movie 'The Hichhiker's guide to the galaxy?",
-    imgSrc: ".styles/h2g22.jpeg",
+    imgSrc: "./styles/h2g22.jpeg",
     answers: ["there is no answer", "42", "D: la réponse D", "No idea"],
     correctIndex: 1,
     level: "easy",
