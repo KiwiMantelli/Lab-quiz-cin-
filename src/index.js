@@ -144,7 +144,7 @@ function clearStatus() {
 
 function endGame() {
   console.log(tenQuestion);
-  if (tenQuestion < 9) {
+  if (tenQuestion < 10) {
     console.log("test end Game");
     tenQuestion++;
   } else {
