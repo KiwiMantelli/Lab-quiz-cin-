@@ -253,7 +253,7 @@ export let questions = [
     level: "normal",
   },
   {
-    question: "Which movie won the most of price all over the world?",
+    question: "Which movie won the most of prizes all over the world?",
     imgSrc: "./styles/palmedor2.jpg",
     answers: ["Parasite", "12 Years a slave", "Gravity", "Mad Max: Fury road"],
     correctIndex: 0,
