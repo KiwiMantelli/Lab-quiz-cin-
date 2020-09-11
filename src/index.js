@@ -70,7 +70,6 @@ function setNext() {
 
 function setRestart() {
   clearStatus();
-  // startBtn.classList.remove("hide");
   scoreDiv.classList.add("hide");
   restart.classList.remove("hide");
 }
@@ -145,7 +144,7 @@ function clearStatus() {
 
 function endGame() {
   console.log(tenQuestion);
-  if (tenQuestion < 9) {
+  if (tenQuestion < 6) {
     console.log("test end Game");
     tenQuestion++;
   } else {

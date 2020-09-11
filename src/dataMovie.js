@@ -358,7 +358,7 @@ export let questions = [
   {
     question: "Who is the main actress of 'Pretty woman' movie?",
     imgSrc:"./styles/prettyWoman2.jpg",
-    answers:["Julia Roberts", "Catherine Zeta -ones", "Cameron Diaz","Jennifer Aniston"],
+    answers:["Julia Roberts", "Catherine Zeta-Jones", "Cameron Diaz","Jennifer Aniston"],
     correctIndex: 0,
     level:"easy",
 
