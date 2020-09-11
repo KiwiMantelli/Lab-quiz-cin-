@@ -8,6 +8,7 @@ const questionContainer = document.getElementById("question-container");
 let imgQuestion = document.getElementById("img-question");
 let questionItem = document.getElementById("question");
 const scoreDiv = document.getElementById("score");
+const finalDiv= document.querySelector(".final-control");
 
 const vid = document.querySelector(".video");
 const divContainer = document.querySelector(".container");
@@ -43,7 +44,6 @@ function levelChoice(evt) {
   );
   nextBtn.addEventListener("click", setNext);
 
-  console.log("---", filteredQuestions);
   questionContainer.classList.remove("hide");
   renderQuestion();
   levelBtns.classList.add("hide");
@@ -153,11 +153,14 @@ function endGame() {
     nextBtn.classList.add("hide");
     scoreRender();
     setRestart();
+    divContainer.classList.add("hide");
   }
 }
 
 function scoreRender() {
-  scoreDiv.classList.remove("hide");
+  finalDiv.classList.remove("hide");
+  const bodyBg= document.querySelector("body");
+  bodyBg.classList.add("changeBackground");
   let quotesScore = (score <= 3) ? "Try again": (score <=5) ? "Not too bad" : "Stop to watch movie and go out";
 
   scoreDiv.innerHTML +="Final score: " + score + "/10" + "<br/>" +quotesScore;
