@@ -1,7 +1,7 @@
 export let questions = [
   {
     question: "Who made the movie Jurassic Park?",
-    imgSrc: "./styles/tRex.gif",
+    imgSrc: "./styles/image/tRex.gif",
     answers: [
       "James Cameron",
       "Terrence Malik",
@@ -13,7 +13,7 @@ export let questions = [
   },
   {
     question: "In which movie can we hear 'Rosebud'?",
-    imgSrc: "./styles/Rosebud2.jpg",
+    imgSrc: "./styles/image/Rosebud2.jpg",
     answers: [
       "Macadam Cowboy",
       "How green was my valley",
@@ -26,7 +26,7 @@ export let questions = [
   {
     question:
       "In which Star Wars movie, the character of Jar Jar Binks appears for the first time?",
-    imgSrc: "./styles/Jarjarbinks2.jpg",
+    imgSrc: "./styles/image/Jarjarbinks2.jpg",
     answers: [
       "Episode 1: The Phantom Menace",
       "Episode 5: The Empire strikes back",
@@ -38,7 +38,7 @@ export let questions = [
   },
   {
     question: "Who says 'You are gonna need a bigger boat!'? ",
-    imgSrc: "./styles/jaws2.jpg",
+    imgSrc: "./styles/image/jaws2.jpg",
     answers: [
       "Steve Zissou (The life aquatic)",
       "Chief Martin Brody (Jaws)",
@@ -50,7 +50,7 @@ export let questions = [
   },
   {
     question: "In the movie Alien, how many members crew there are? ",
-    imgSrc: "./styles/Alien2.jpg",
+    imgSrc: "./styles/image/Alien2.jpg",
     answers: [
       "One, they all died",
       "Eight, with the Alien",
@@ -62,7 +62,7 @@ export let questions = [
   },
   {
     question: "What is the name of the rat in 'Ratatouille'?",
-    imgSrc: "./styles/Movie-review-Ratatouille2.jpg",
+    imgSrc: "./styles/image/Movie-review-Ratatouille2.jpg",
     answers: ["Ratatouille", "Emile", "Auguste Gusteau", "Rémy"],
     correctIndex: 3,
     level: "normal",
@@ -70,14 +70,14 @@ export let questions = [
   {
     question:
       "What is the most Disney animation movie viewed on the box-office?",
-    imgSrc: "./styles/disney2.jpg",
+    imgSrc: "./styles/image/disney2.jpg",
     answers: ["Lion King (1994)", "Frozen", "Lion King (2019)", "Snow White"],
     correctIndex: 2,
     level: "normal",
   },
   {
     question: "Who plays the main character in the movie Ben-Hur?",
-    imgSrc: "./styles/BenHur2.jpg",
+    imgSrc: "./styles/image/BenHur2.jpg",
     answers: [
       "Jack Hawkins",
       "Charlton Heston",
@@ -89,7 +89,7 @@ export let questions = [
   },
   {
     question: "Who says 'I am too old for this shit'?",
-    imgSrc: "./styles/tooOld.jpg",
+    imgSrc: "./styles/image/tooOld.jpg",
     answers: [
       "Roger Murtaugh (The lethal weapon)",
       "Axel Foley (Beverly Hills cop)",
@@ -101,7 +101,7 @@ export let questions = [
   },
   {
     question: "Who says 'I am your father'?",
-    imgSrc: "./styles/luke.gif",
+    imgSrc: "./styles/image/luke.gif",
     answers: ["Your father", "Chewbaca", "Darth Vader", "Noooooo"],
     correctIndex: 2,
     level: "easy",
@@ -109,14 +109,14 @@ export let questions = [
   {
     question:
       "Which William Shakespeare's play inspired the film 'West Side Story'?",
-    imgSrc: "./styles/westsidestory.gif",
+    imgSrc: "./styles/image/westsidestory.gif",
     answers: ["Hamlet", "Macbeth", "Romeo and Juliet", "Othello"],
     correctIndex: 2,
     level: "normal",
   },
   {
-    question: "In which movie Clint Eastwood dies front camera?",
-    imgSrc: "./styles/clintEastwood2.jpg",
+    question: "In which movie Clint Eastwood dies on screen?",
+    imgSrc: "./styles/image/clintEastwood2.jpg",
     answers: [
       "The Bridges of Madison county",
       "Gran Torino",
@@ -128,14 +128,14 @@ export let questions = [
   },
   {
     question: "'The Magnificent seven' is a remake of which movie?",
-    imgSrc: "./styles/7mercenaires2.jpg",
+    imgSrc: "./styles/image/7mercenaires2.jpg",
     answers: ["Kagemusha", "12 Angry men", "Furyo", "Seven samurai"],
     correctIndex: 3,
     level: "hard",
   },
   {
     question: "3 films won 11 oscars, which of them?",
-    imgSrc: "./styles/oscar2.jpg",
+    imgSrc: "./styles/image/oscar2.jpg",
     answers: [
       "Ben-Hur, Titanic, The Return of the king",
       "Avatar, Titanic, West Side Story",
@@ -147,7 +147,7 @@ export let questions = [
   },
   {
     question: "What is the brand of Doc's car in 'Back to the future'?",
-    imgSrc: "./styles/backtofuture.gif",
+    imgSrc: "./styles/image/backtofuture.gif",
     answers: [
       "Chevrolet Camaro",
       "Pontiac GTO",
@@ -159,14 +159,14 @@ export let questions = [
   },
   {
     question: "Which animation movie won an Oscar for the song 'Let it go'?",
-    imgSrc: "./styles/disney2.jpg",
+    imgSrc: "./styles/image/disney2.jpg",
     answers: ["Tangled", "Moana", "Frozen", "Mulan"],
     correctIndex: 2,
     level: "easy",
   },
   {
     question: "What is the breed of the famous dog Lassie?",
-    imgSrc: "./styles/lassie2.webp",
+    imgSrc: "./styles/image/lassie2.webp",
     answers: [
       "Alaskan Malamute",
       "German Sheperd",
@@ -178,7 +178,7 @@ export let questions = [
   },
   {
     question: "What is Indiana Jones' biggest fear?",
-    imgSrc: "./styles/Indiana.gif",
+    imgSrc: "./styles/image/Indiana.gif",
     answers: ["Snakes", "Rats", "Spiders", "Dogs"],
     correctIndex: 0,
     level: "normal",
@@ -186,7 +186,7 @@ export let questions = [
   {
     question:
       "What is the song played during the ear-cutting scene in 'Reservoir dog' movie? ",
-    imgSrc: "./styles/reservoirDog.gif",
+    imgSrc: "./styles/image/reservoirDog.gif",
     answers: [
       "Jungle boogie by Kool & the Gang",
       "Stuck in the middle with you by Stealers Wheel",
@@ -199,14 +199,14 @@ export let questions = [
   {
     question:
       "In the movie 'Pulp fiction', which weapon choose Bruce Willis to rescue Ving Rhames' character?",
-    imgSrc: "./styles/pulpFIction.gif",
+    imgSrc: "./styles/image/pulpFIction.gif",
     answers: ["hammer", "Baseball bat", "Chainsaw", "Katana"],
     correctIndex: 3,
     level: "hard",
   },
   {
     question: "Who plays the talk show host in the movie 'Joker' (2019)?",
-    imgSrc: "./styles/joker.gif",
+    imgSrc: "./styles/image/joker.gif",
     answers: [
       "Joaquin Phoenix",
       "Robert De Niro",
@@ -219,7 +219,7 @@ export let questions = [
   {
     question:
       "What is the name of Dwayne Johnson's character in the movie 'Moana'?",
-    imgSrc: "./styles/moana2.png",
+    imgSrc: "./styles/image/moana2.png",
     answers: ["Moana", "Tala", "Maui", "Tamatoa"],
     correctIndex: 2,
     level: "hard",
@@ -227,7 +227,7 @@ export let questions = [
   {
     question:
       "Georges Lazenby played James Bond only once, what was the movie?",
-    imgSrc: "./styles/bond2.webp",
+    imgSrc: "./styles/image/bond2.webp",
     answers: [
       "Godlfinger",
       "Dr. No",
@@ -239,7 +239,7 @@ export let questions = [
   },
   {
     question: "Who provided Groot's voice in Guardians of the galaxy?",
-    imgSrc: "./styles/baby-groot2.jpg",
+    imgSrc: "./styles/image/baby-groot2.jpg",
     answers: ["Vin Diesel", "Dwayne Johnson", "Chris Pratt", "Bradley Cooper"],
     correctIndex: 0,
     level: "easy",
@@ -247,21 +247,21 @@ export let questions = [
   {
     question:
       "How many members form the fellowship of the ring in the film series 'The Lord of the rings'?",
-    imgSrc: "./styles/lordOftherings2.png",
+    imgSrc: "./styles/image/lordOftherings2.png",
     answers: ["6", "9", "7", "8"],
     correctIndex: 1,
     level: "normal",
   },
   {
     question: "Which movie won the most of prizes all over the world?",
-    imgSrc: "./styles/palmedor2.jpg",
+    imgSrc: "./styles/image/palmedor2.jpg",
     answers: ["Parasite", "12 Years a slave", "Gravity", "Mad Max: Fury road"],
     correctIndex: 0,
     level: "hard",
   },
   {
     question: "True lies is a remake of which french movie?",
-    imgSrc: "./styles/True-Lies2.jpg",
+    imgSrc: "./styles/image/True-Lies2.jpg",
     answers: [
       "La Totale",
       "OSS 117",
@@ -274,7 +274,7 @@ export let questions = [
   {
     question:
       "Which name is source of trouble in the french movie 'Le Prénom'?",
-    imgSrc: "./styles/lePrénom2.jpeg",
+    imgSrc: "./styles/image/lePrénom2.jpeg",
     answers: ["Adolph", "Adolf", "Adolphe", "Adaulf"],
     correctIndex: 2,
     level: "normal",
@@ -282,14 +282,14 @@ export let questions = [
   {
     question:
       "What is the answer to the ultimate question of life, the universe, and everything in the movie 'The Hichhiker's guide to the galaxy?",
-    imgSrc: "./styles/h2g22.jpeg",
+    imgSrc: "./styles/image/h2g22.jpeg",
     answers: ["there is no answer", "42", "D: la réponse D", "No idea"],
     correctIndex: 1,
     level: "easy",
   },
   {
     question: "What is the full name of Zorg in 'The Fifth element'?",
-    imgSrc: "./styles/zorg.jpeg",
+    imgSrc: "./styles/image/zorg.jpeg",
     answers: [
       "Jean-Baptiste Emanuel Zorg",
       "Jean-Emanuel Zorg",
@@ -301,14 +301,14 @@ export let questions = [
   },
   {
     question: "Who is the actor of Captain America?",
-    imgSrc: "./styles/captainAmerica2.jpeg",
+    imgSrc: "./styles/image/captainAmerica2.jpeg",
     answers: ["Chris Hemsworth", "Chris Evans", "Chris Pine", "Chris Pratt"],
     correctIndex: 1,
     level: "hard",
   },
   {
     question: "In which Ghibli movie we can see the character of Haku?",
-    imgSrc: "./styles/haku2.png",
+    imgSrc: "./styles/image/haku2.png",
     answers: [
       "Castle in the sky",
       "My neighbor Totoro",
@@ -320,7 +320,7 @@ export let questions = [
   },
   {
     question: "Who is the director of the movie Point break?",
-    imgSrc: "./styles/pointBreak.jpg",
+    imgSrc: "./styles/image/pointBreak.jpg",
     answers: [
       "Kathryn Bigelow",
       "Sofia Coppola",
@@ -332,7 +332,7 @@ export let questions = [
   },
   {
     question: "Who is the main actress of 'Some like it hot'?",
-    imgSrc: "./styles/marilynMonroe2.jpg",
+    imgSrc: "./styles/image/marilynMonroe2.jpg",
     answers: [
       "Audrey Hepburn",
       "Greta Garbo",
@@ -345,7 +345,7 @@ export let questions = [
   {
     question:
       "Who says 'You shall not pass!' in 'The Lord of the rings' movie?",
-    imgSrc: "./styles/balrog.gif",
+    imgSrc: "./styles/image/balrog.gif",
     answers: [
       "Frodo Baggins",
       "Aragorn",
@@ -357,7 +357,7 @@ export let questions = [
   },
   {
     question: "Who is the main actress of 'Pretty woman' movie?",
-    imgSrc:"./styles/prettyWoman2.jpg",
+    imgSrc:"./styles/image/prettyWoman2.jpg",
     answers:["Julia Roberts", "Catherine Zeta-Jones", "Cameron Diaz","Jennifer Aniston"],
     correctIndex: 0,
     level:"easy",
@@ -365,8 +365,8 @@ export let questions = [
   },
   {
     question: "In the movie 'The Groundhog day', what happens to Phil Connors? ",
-    imgSrc:"./styles/groundhog.gif",
-    answers:["he get bite by a groundhog","he is trapped in a time loop","he lose his memory","he travels time"],
+    imgSrc:"./styles/image/groundhog.gif",
+    answers:["he gets bite by a groundhog","he is trapped in a time loop","he loses his memory","he travels through time"],
     correctIndex:1,
     level:"normal",
   }

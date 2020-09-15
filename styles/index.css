@@ -18,7 +18,7 @@ body {
 }
 
 .changeBackground{
-  background: url("cesar.jpeg");
+  background: url("/styles/image/cesar.jpeg");
 }
 
 .container {
