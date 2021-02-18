@@ -2,9 +2,8 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>CInéQuizz</title>
+  <meta charset="UTF-8" name="viewport" content="width=device-width"/>
+  <title>CinéQuizz</title>
   <link rel="stylesheet" href="./styles/index.css" />
   <script type="module" src="./src/index.js"></script>
 </head>
@@ -17,7 +16,7 @@
   <div class="container hide">
     <div id="question-container" class="hide">
 
-      <div id="img-question"> <img src=""></div>
+      <div id="img-question"> <img class="question-img-size" src=""></div>
       <div id="question">Question</div>
       <div id="answer-btn" class="btn-grid">
         <button class="btn">Answer 1</button>
@@ -39,8 +38,8 @@
     
 
   </div>
-  <div class="final-control hide">
-    <button id="restart-btn" class="restart-btn btn hide"> Restart</button>
+  <div id="final-control" class="hide">
+    <button id="restart-btn" class="restart-btn btn"> Restart</button>
     <div id="score"></div>
   </div>
 

@@ -8,8 +8,7 @@ const questionContainer = document.getElementById("question-container");
 let imgQuestion = document.getElementById("img-question");
 let questionItem = document.getElementById("question");
 const scoreDiv = document.getElementById("score");
-const finalDiv= document.querySelector(".final-control");
-
+const finalDiv= document.querySelector("#final-control");
 const vid = document.querySelector(".video");
 const divContainer = document.querySelector(".container");
 const levelBtns = document.querySelector("#container-level");
@@ -21,10 +20,12 @@ let runningQuestionIndex = getRandomIndex(hardQuestions);
 let tenQuestion = 1;
 let score = 0;
 
+//video intro
 function setVideo() {
   divContainer.classList.remove("hide");
   vid.classList.add("anim-fade-out");
   vid.classList.add("hide");
+  
 }
 setTimeout(setVideo, 12000);
 
@@ -70,7 +71,6 @@ function setNext() {
 
 function setRestart() {
   clearStatus();
-  scoreDiv.classList.add("hide");
   restart.classList.remove("hide");
 }
 
@@ -161,7 +161,7 @@ function scoreRender() {
   finalDiv.classList.remove("hide");
   const bodyBg= document.querySelector("body");
   bodyBg.classList.add("changeBackground");
-  let quotesScore = (score <= 3) ? "Try again": (score <=5) ? "Not too bad" : "Stop to watch movie and go out";
+  let quotesScore = (score <= 3) ? "Try again, don't give up.": (score <=6) ? "Not too bad." +"</br>"+"Keep going practice." : "Bravo! You like cinema."+"<br/>"+"You should stop to watch movie and go out.";
 
   scoreDiv.innerHTML +="Final score: " + score + "/10" + "<br/>" +quotesScore;
 
